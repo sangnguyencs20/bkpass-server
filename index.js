@@ -11,7 +11,10 @@ require("dotenv").config();
 
 dotenv.config();
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: ["http://localhost:3000", "https://bkpass-client.up.railway.app"],
+    credentials: true,
+  }))
 
 bcrypt = require('bcryptjs')
 
