@@ -2,6 +2,7 @@ const itemsModel = require('../../models/items');
 
 const deleteItem = async (req, res) => {
     try {
+        
         const author = req.body.author;
         const itemId = req.params.itemId;
         const item = await itemsModel.findById(itemId)
