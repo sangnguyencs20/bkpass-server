@@ -97,7 +97,7 @@ app.post("/api/login", async (req, res) => {
 const route = require('./routes/index');
 app.use('/api', route);
 
-app.listen(5000, () => { console.log("Server started on 5000"); })
+app.listen(process.env.PORT || 5000, () => { console.log("Server started on 5000"); })
 
 const connectDB = require("./config/db");
 
