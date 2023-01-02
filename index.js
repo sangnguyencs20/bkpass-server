@@ -12,7 +12,7 @@ require("dotenv").config();
 dotenv.config();
 app.use(express.json())
 app.use(cors({
-    origin: ["http://localhost:3000", "https://bkpassclient.up.railway.app"],
+    origin: ["http://localhost:3000", "https://bkpass-client.up.railway.app"],
     credentials: true,
   }))
 
